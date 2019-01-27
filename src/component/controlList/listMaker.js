@@ -16,7 +16,7 @@ const ListMaker = (props)=>{
  
 
 
-    return <div className="mt-1 mb-2">
+    return <div className="mt-0 mb-2">
   
       <div className="btn-group" role="group" aria-label="Basic example">
         <button disabled={Dable} onClick={()=>props.Func(props.ke,"-")}   type="button" className="btn btn-secondary">-</button>

@@ -27,7 +27,7 @@ componentDidMount(){
 
   render() {
 
-return (<Aux><div className={classes.bg}></div>
+return (<Aux><img className={classes.bg}  src="https://firebasestorage.googleapis.com/v0/b/burger-48.appspot.com/o/Burger-bg.jpg?alt=media&token=f582060a-f3f1-459b-a6ce-57b21f27673e" />
             
       <Header idtoken={this.props.id}  listHandler={this.listHandler.bind(this)} SDcontrol={this.state.SideDrower}/>
      

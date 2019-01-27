@@ -28,7 +28,7 @@ class Controler extends React.Component{
 
       if(this.props.show){
         Switcher=<Aux><Burger  total={this.Total}/><div className={classes.border}  >
-        <h4 className="mt-2">The Price:${Total}</h4>
+        <h4 className="mt-2 bg-light" style={{width:"20%",marginLeft:"40%"}}>The Price:${Total}</h4>
           {[0,1,2,3].map((i)=>{
             return <ListMaker ke={i} check={Total}  key={i} name={this.state.Name[i]} number={this.props.ing[i]} Func={this.props.AmountHandler}/>})}
               <Modal  Checkout={this.MovetoForm}/>
