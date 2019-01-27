@@ -1,0 +1,117 @@
+
+.Monoton {
+    font-family: 'Monoton', 'cursive';
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 601px) {
+
+    .header{
+        box-sizing: border-box;
+        background-color: rgb(8, 27, 58);
+        color: white;
+        font-size: 2rem;
+        width: 100%;
+        height: 75px;
+        margin-bottom: 30px;
+    }
+    .lowhead{
+        display: flex;
+        flex-flow: row;
+        justify-content:space-between; 
+        padding: 15px 15px;
+    }
+
+    .open, .close {
+        display: none;
+    }
+    .menuH{
+        
+        display: flex;
+        flex-flow: row;
+        
+    }
+    .menu {
+        margin-right: 20px;
+
+        padding-top: 8px;
+        font-family: 'Baloo Tammudu', 'cursive';
+        cursor: pointer;
+    }
+
+.active {
+    color:red !important;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none
+}
+}
+
+
+@media screen and (max-width: 600px) {
+    .header{
+        margin-bottom: 100px;}
+    .lowhead    { 
+        top: 0;
+        left:0;  
+        box-sizing: border-box;
+        background-color: rgb(8, 27, 58);
+        color: white;
+        font-size: 2rem;
+        width: 280px;
+        max-width: 70%;
+ 
+       
+
+        height: 100%;
+        position: fixed;
+        z-index: 100;
+        
+        
+        
+        
+    }
+    .dropdown{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 50;
+        background-color: black;
+        opacity: 0.5;
+    }
+     .menu:hover , .close:hover {
+         opacity: .5;
+        width: 100%;
+        background-color:grey;
+        cursor: pointer;
+    }
+
+    .close {
+        margin-top: 15px;
+        cursor: pointer;
+    }
+    .open{
+        position: absolute;
+        left:15px;
+        top:15px;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+
+    .hide {
+        
+        display: none;
+        transform: translateX(-100%);
+    }
+    .show {
+        
+        transform: translateX(0);
+        
+    }
+
+}
+
